@@ -34,7 +34,6 @@ const createWindow = () => {
   
   ipcMain.handle(K.EVENT.BLUETOOTH.CONNECT_DEVICE, async(event, ...args)=>{
     const [name] = args
-    console.log('connect-bluetooth-device:', name)
     connectBluetoothDevice(name)
   })
   

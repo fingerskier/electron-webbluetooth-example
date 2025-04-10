@@ -10,7 +10,6 @@ module.exports = {
 
 
   connectBluetoothDevice: (name)=>{
-    console.log(`Searching for ${name} in`, devices)
     const result = devices.find((device) => {
       return device.deviceName === name
     })
